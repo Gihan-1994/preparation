@@ -9,6 +9,6 @@ export class CartPage{
         this.cartItemName = page.locator('[data-test="inventory-item-name"]');
     }
     async assertOnCartPage(){
-        await this.page.waitForURL(/cart.html/);
+        await this.page.waitForURL(/cart/);
     }
 }
